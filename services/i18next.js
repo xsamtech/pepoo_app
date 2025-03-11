@@ -6,10 +6,12 @@ import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import en from '../locales/en.json'
 import fr from '../locales/fr.json'
+import ln from '../locales/ln.json'
 
 export const languageResources = {
     en: {translation: en},
-    fr: {translation: fr}
+    fr: {translation: fr},
+    ln: {translation: ln}
 }
 
 i18next.use(initReactI18next).init({

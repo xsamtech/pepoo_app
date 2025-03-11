@@ -1,9 +1,9 @@
 {
-    "copyright": "Copyright (c) 2024 Reborn",
+    "copyright": "Copyright (c) {{ year }}",
     "all_rights_reserved": "Tous droits réservés",
-    "welcome_title": "Bienvenue sur Boongo",
-    "welcome_description": "Consultez des livres, des revues, des journaux, des cartes géogrpahiques, etc.",
-    "about_boongo": "A propos de l’appli Boongo",
+    "welcome_title": "Votre appli de covoiturage",
+    "welcome_description": "Trouver une voiture qui prend la même direction que vous pour vous accompagner.",
+    "about_pepoo": "A propos de l’appli Pepoo",
     "about_reborn": "A propos de l’entreprise Reborn",
     "privacy_title": "Politique de confidentialité",
     "terms_title": "Conditions d’utilisation",
@@ -16,6 +16,9 @@
     "see_more": "Voir plus",
     "see_less": "Voir moins",
     "page": "Page",
+    "my_position": "Ma position",
+    "driver": "Chauffeur",
+    "passenger": "Passager",
     "notepad": {
         "title": "Enregistrez des résumés",
         "title_edit": "Editer le résumé",
@@ -88,22 +91,14 @@
 
     "navigation": {
         "home": "Accueil",
-        "search": "Rechercher une œuvre",
-        "reading": "Lecture",
-        "summary": "Résumés",
+        "search": "Où allez-vous ?",
         "about": "A propos",
         "terms": "Conditions",
         "privacy": "Confidentialité",
         "contact": "Nous contacter",
-        "book": "Ouvrages",
-        "magazine": "Mags, revues et journaux",
-        "mapping": "Cartograhie",
-        "media": "Médias",
-        "notification": "Notifications",
-        "account": "Mon profil",
-        "update_account": "Éditer compte",
-        "cart": "Mon panier",
-        "work": "Mes œuvres"
+        "history": "Historique des commandes",
+        "payment_method": "Mode de paiement",
+        "favorite_places": "Lieux favoris"
     },
 
     "auth": {

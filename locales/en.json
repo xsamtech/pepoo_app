@@ -1,9 +1,9 @@
 {
-    "copyright": "Copyright (c) 2024 Reborn",
+    "copyright": "Copyright (c) {{ year }}",
     "all_rights_reserved": "All rights reserved",
-    "welcome_title": "Welcome on Boongo",
-    "welcome_description": "Check out books, magazines, newspapers, geographical maps, etc.",
-    "about_boongo": "About the Boongo app",
+    "welcome_title": "Your ride sharing app",
+    "welcome_description": "Find a car that is going in the same direction as you to accompany you.",
+    "about_pepoo": "About the Pepoo app",
     "about_reborn": "About the Reborn company",
     "privacy_title": "Privacy policy",
     "terms_title": "Terms of use",
@@ -16,6 +16,9 @@
     "see_more": "See more",
     "see_less": "See less",
     "page": "Page",
+    "my_position": "Ma position",
+    "driver": "Driver",
+    "passenger": "Passenger",
     "notepad": {
         "title": "Save summaries",
         "title_edit": "Edit the summary",
@@ -88,22 +91,14 @@
 
     "navigation": {
         "home": "Home",
-        "search": "Search a work",
-        "reading": "Reading",
-        "summary": "Summaries",
+        "search": "Where are you going?",
         "about": "About",
-        "terms": "Terms",
+        "terms": "Conditions",
         "privacy": "Privacy",
-        "contact": "Contact us",
-        "book": "Books",
-        "magazine": "Magazines & journals",
-        "mapping": "Mapping",
-        "media": "Medias",
-        "notification": "Notifications",
-        "account": "My profile",
-        "update_account": "Edit account",
-        "cart": "My cart",
-        "work": "My works"
+        "contact": "Contact Us",
+        "history": "Orders history",
+        "payment_method": "Payment method",
+        "favorite_places": "Favorite places"
     },
 
     "auth": {

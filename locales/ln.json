@@ -1,9 +1,9 @@
 {
-    "copyright": "Copyright (c) 2024 Reborn",
+    "copyright": "Copyright (c) {{ year }}",
     "all_rights_reserved": "Makoki nyonso mazali ya biso",
-    "welcome_title": "Boyei malamu na Boongo",
-    "welcome_description": "Botala ba livres, ba magazines, ba journaux, ba cartes géographiques, etc.",
-    "about_boongo": "Na ntina na appli Boongo",
+    "welcome_title": "Application na yo ya kokende na motuka elongo",
+    "welcome_description": "Luká motuka oyo ezali kokende na ngámbo moko na yo mpo ekende elongo na yo.",
+    "about_pepoo": "Na ntina na appli Pepoo",
     "about_reborn": "Na ntina na mosala Reborn",
     "privacy_title": "Politiki ya kobatela makambo ya moto ye moko",
     "terms_title": "Mibeko ya kosalela",
@@ -16,6 +16,9 @@
     "see_more": "Tala misusu",
     "see_less": "Tala moke",
     "page": "Lokasa",
+    "my_position": "Pozision na ngai",
+    "driver": "Mokumbi",
+    "passenger": "Oyo bamemi",
     "notepad": {
         "title": "Bomba ba résumés",
         "title_edit": "Bongisa résumé",
@@ -52,7 +55,7 @@
     },
     "most_popular": "Oyo eza na lupemba ya makasi",
     "have_account": "Ozali déjà na compte?",
-    "no_account": "Ozali na compte te?"
+    "no_account": "Ozali na compte te?",
     "select_date": "Pona mokolo",
     "search": "Luka ...",
     "search_description": "Luka buku, zulunalo, bapanzi sango to karte.",
@@ -87,23 +90,15 @@
     "pay": "Futa sikoyo",
 
     "navigation": {
-        "home": "Boyei malamu",
-        "search": "Koluka oeuvre moko",
-        "reading": "Kotanga",
-        "summary": "Résumés",
-        "about": "A propos",
-        "terms": "Conditions",
-        "privacy": "Confidentialité",
-        "contact": "Kokutana na biso",
-        "book": "Ouvrages",
-        "magazine": "Mags, revues et journaux",
-        "mapping": "Cartograhie",
-        "media": "Médias",
-        "notification": "Notifications",
-        "account": "Profil na ngai",
-        "update_account": "Kobongisa compte",
-        "cart": "Kitunga na ngai",
-        "work": "Ba œuvres na ngai"
+        "home": "Ebandeli",
+        "search": "Okeyi wapi?",
+        "about": "Oyo etali biso",
+        "terms": "Mibeko",
+        "privacy": "Nkuku",
+        "contact": "Kobenga biso",
+        "history": "Ba commandes osala",
+        "payment_method": "Lolenge ya kofuta",
+        "favorite_places": "Bisika olingaka"
     },
 
     "auth": {
