@@ -1,5 +1,5 @@
 {
-    "copyright": "Copyright (c) {{ year }}",
+    "copyright": "Copyright (c) {{ year }} Smartways",
     "all_rights_reserved": "Tous droits réservés",
     "welcome_title": "Votre appli de covoiturage",
     "welcome_description": "Trouver une voiture qui prend la même direction que vous pour vous accompagner.",
@@ -17,6 +17,8 @@
     "see_less": "Voir moins",
     "page": "Page",
     "my_position": "Ma position",
+    "my_current_position": "Ma position actuelle",
+    "give_destination": "Donner ma destination",
     "driver": "Chauffeur",
     "passenger": "Passager",
     "notepad": {
@@ -76,6 +78,7 @@
     "register": "Inscription",
     "login": "Connexion",
     "logout": "Déconnexion",
+    "exit": "Quitter la session",
     "i_login": "Je vais me connecter",
     "personal_infos": "Infos personnelles",
     "change_password": "Modifier mot de passe",
@@ -98,7 +101,8 @@
         "contact": "Nous contacter",
         "history": "Historique des commandes",
         "payment_method": "Mode de paiement",
-        "favorite_places": "Lieux favoris"
+        "favorite_places": "Lieux favoris",
+        "settings": "Paramètres"
     },
 
     "auth": {

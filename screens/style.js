@@ -3,6 +3,7 @@
  * @see https://team.xsamtech.com/xanderssamoth
  */
 import { Dimensions, StyleSheet } from 'react-native';
+import { COLORS, PADDING, TEXT_SIZE } from '../tools/constants';
 
 const homeStyles = StyleSheet.create({
     // Miscellaneous
@@ -47,6 +48,42 @@ const homeStyles = StyleSheet.create({
     checkboxContainer: {
         flexDirection: 'row',
         alignItems: 'center'
+    },
+
+    // Maps
+    mapContainer: {
+        position: 'relative',
+        overflow: 'hidden',
+        marginBottom: PADDING.p00 + 1,
+        borderWidth: 1,
+        borderColor: COLORS.secondary,
+        borderRadius: 10
+    },
+
+    map: {
+        flex: 1,
+        height: 230,
+    },
+
+    mapButtonsContainer: {
+        position: 'absolute',
+        top: PADDING.p01,
+        right: PADDING.p01,
+        flexDirection: 'column',
+        alignItems: 'center',
+    },
+
+    mapButton: {
+        backgroundColor: COLORS.dark_secondary,
+        padding: PADDING.p00,
+        marginBottom: 10,
+        borderRadius: 5,
+        elevation: 1
+    },
+
+    mapButtonText: {
+        color: 'white',
+        fontWeight: 'bold',
     },
 
     // Modal
@@ -190,7 +227,8 @@ const homeStyles = StyleSheet.create({
     authlogo: {
         flexDirection: 'column',
         alignItems: 'center',
-        marginBottom: 30
+        marginTop: -30,
+        marginBottom: PADDING.p01
     },
 
     authTitle: {
@@ -232,7 +270,7 @@ const homeStyles = StyleSheet.create({
     authButton: {
         paddingVertical: 4,
         paddingHorizontal: 0,
-        marginTop: 10,
+        marginTop: PADDING.p00,
     },
 
     authButtonText: {
@@ -250,7 +288,28 @@ const homeStyles = StyleSheet.create({
     },
 
     drawerSection: {
-        width: 'auto'
+        width: 'auto',
+        height: Dimensions.get('screen').height - 172,
+        overflow: 'hidden',
+        borderBottomRightRadius: 15
+    },
+
+    drawerCurrentUser: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginTop: PADDING.p00,
+        marginBottom: PADDING.p01,
+        marginLeft: PADDING.p07
+    },
+
+    drawerFooter: {
+        position: 'absolute',
+        left: 0,
+        bottom: 0,
+        width: '100%',
+        height: 140,
+        backgroundColor: COLORS.dark_light,
+        paddingVertical: PADDING.p00
     },
 
     drawerButton: {
@@ -352,7 +411,7 @@ const homeStyles = StyleSheet.create({
 
     homeParagraph: {
         marginTop: 4,
-        fontSize: 12
+        fontSize: 14
     },
 
     homeThumbnail: {
@@ -377,16 +436,17 @@ const homeStyles = StyleSheet.create({
     },
 
     categoryBadgeSelected: {
-        marginRight: 7,
-        paddingTop: 3,
-        paddingBottom: 4,
-        paddingHorizontal: 10,
-        borderRadius: 10
+        alignSelf: 'center',
+        backgroundColor: COLORS.yellow_transparent,
+        marginTop: PADDING.p00,
+        marginBottom: PADDING.p02,
+        marginHorizontal: PADDING.p05,
+        padding: PADDING.p01,
+        borderRadius: PADDING.p07
     },
 
     categoryBadgeTextSelected: {
-        fontSize: 14,
-        fontWeight: '800',
+        letterSpacing: 0.7,
     },
 
     // Search
@@ -454,8 +514,8 @@ const homeStyles = StyleSheet.create({
 
     // Notepad
     noteTitle: {
-        marginVertical: 10,
-        fontSize: 18,
+        marginVertical: PADDING.p00,
+        fontSize: TEXT_SIZE.paragraph,
         textAlign: 'center',
     },
 

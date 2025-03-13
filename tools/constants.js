@@ -19,7 +19,9 @@ export const COLORS = {
     white: '#fff',
     black: '#000',
     purple: '#643487',
+    purple_transparent: 'rgba(100, 52, 135, 0.3)',
     yellow: '#eaa829',
+    yellow_transparent: 'rgba(234, 168, 41, 0.3)',
     iconColor: '#eaebef'
 };
 

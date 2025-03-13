@@ -3,10 +3,12 @@
  * @see https://team.xsamtech.com/xanderssamoth
  */
 import React, { useEffect } from 'react'
+import { TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { DrawerActions, useNavigation } from '@react-navigation/native';
+import { DrawerActions, NavigationContainer, useNavigation } from '@react-navigation/native';
+import { useTranslation } from 'react-i18next';
 import Orientation from 'react-native-orientation-locker';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { COLORS, PADDING } from './tools/constants';
@@ -14,6 +16,10 @@ import HomeScreen from './screens/Home';
 import LanguageScreen from './screens/language';
 import DrawerContent from './DrawerContent';
 import Logo from './assets/img/logo.svg';
+import AboutScreen from './screens/About';
+import TermsScreen from './screens/About/terms';
+import PrivacyScreen from './screens/About/privacy';
+import ContactScreen from './screens/About/contact';
 
 // =============== Bottom tab ===============
 const BottomTab = createBottomTabNavigator();
@@ -47,10 +53,10 @@ const AboutBottomTab = () => {
         headerLeft: () => {
           return (
             <>
-              <TouchableOpacity onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                <Icon name='menu' color={COLORS.black} style={{ fontSize: 28, marginLeft: 7 }} />
+              <TouchableOpacity onPress={() => navigation.navigate('Home', { screen: 'HomeStack' })}>
+                <Icon name='arrow-left' color={COLORS.black} style={{ fontSize: 24, marginLeft: PADDING.p01 }} />
               </TouchableOpacity>
-              <Logo width={41} height={41} style={{ marginHorizontal: 7 }} />
+              <Logo width={41} height={41} style={{ marginHorizontal: PADDING.p01 }} />
             </>
           );
         },
@@ -97,8 +103,8 @@ const AboutBottomTab = () => {
       <BottomTab.Screen
         name='Contact' component={ContactScreen}
         options={{
-          title: t('help'),
-          tabBarLabel: t('help'),
+          title: t('navigation.contact'),
+          tabBarLabel: t('navigation.contact'),
           tabBarIcon: ({ color, size, focused }) => (
             focused ?
               <Icon name='phone' color={COLORS.black} size={size} />
@@ -112,6 +118,11 @@ const AboutBottomTab = () => {
 }
 
 const StackNav = () => {
+  // =============== Navigation ===============
+  const navigation = useNavigation();
+  // =============== Language ===============
+  const { t } = useTranslation();
+
   return (
     <Stack.Navigator
       initialRouteName='HomeStack'
@@ -121,7 +132,22 @@ const StackNav = () => {
         headerTintColor: COLORS.dark_secondary
       }}>
       <Stack.Screen name='HomeStack' component={HomeScreen} />
-      <Stack.Screen name='Language' component={LanguageScreen} />
+      <Stack.Screen name='Language' component={LanguageScreen}
+        options={{
+          headerShown: true,
+          title: t('change_lang'),
+          headerLeft: () => {
+            return (
+              <>
+                <TouchableOpacity onPress={() => navigation.navigate('Home', { screen: 'HomeStack' })}>
+                  <Icon name='arrow-left' color={COLORS.black} style={{ fontSize: 24 }} />
+                </TouchableOpacity>
+                <Logo width={41} height={41} style={{ marginHorizontal: PADDING.p01 }} />
+                <Icon name='translate' color={COLORS.black} style={{ fontSize: 28, marginRight: PADDING.p01 }} />
+              </>
+            );
+          }
+        }} />
       <Stack.Screen name='About' component={AboutBottomTab} />
     </Stack.Navigator>
   );

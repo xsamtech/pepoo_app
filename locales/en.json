@@ -1,5 +1,5 @@
 {
-    "copyright": "Copyright (c) {{ year }}",
+    "copyright": "Copyright (c) {{ year }} Smartways",
     "all_rights_reserved": "All rights reserved",
     "welcome_title": "Your ride sharing app",
     "welcome_description": "Find a car that is going in the same direction as you to accompany you.",
@@ -16,7 +16,9 @@
     "see_more": "See more",
     "see_less": "See less",
     "page": "Page",
-    "my_position": "Ma position",
+    "my_position": "My position",
+    "my_current_position": "My current actuelle",
+    "give_destination": "Give my destination",
     "driver": "Driver",
     "passenger": "Passenger",
     "notepad": {
@@ -76,6 +78,7 @@
     "register": "Register",
     "login": "Log in",
     "logout": "Log out",
+    "exit": "Exit session",
     "i_login": "I will log in",
     "personal_infos": "Personal infos",
     "change_password": "Change password",
@@ -95,10 +98,11 @@
         "about": "About",
         "terms": "Conditions",
         "privacy": "Privacy",
-        "contact": "Contact Us",
+        "contact": "Contact us",
         "history": "Orders history",
         "payment_method": "Payment method",
-        "favorite_places": "Favorite places"
+        "favorite_places": "Favorite places",
+        "settings": "Settings"
     },
 
     "auth": {
