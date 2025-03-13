@@ -27,7 +27,7 @@ const homeStyles = StyleSheet.create({
     },
 
     headingText: {
-        fontSize: 14,
+        fontSize: PADDING.p07,
         textAlign: 'center',
         marginBottom: 7
     },
@@ -54,7 +54,7 @@ const homeStyles = StyleSheet.create({
     mapContainer: {
         position: 'relative',
         overflow: 'hidden',
-        marginBottom: PADDING.p00 + 1,
+        marginTop: PADDING.p02,
         borderWidth: 1,
         borderColor: COLORS.secondary,
         borderRadius: 10
@@ -131,13 +131,14 @@ const homeStyles = StyleSheet.create({
     // Card
     cardEmpty: {
         width: '100%',
-        padding: '10',
+        padding: PADDING.p01,
     },
 
     cardEmptyTitle: {
         marginBottom: 10,
-        fontSize: 16,
+        fontSize: 19,
         fontWeight: '700',
+        color: COLORS.purple
     },
 
     cardEmptyText: {
@@ -188,13 +189,13 @@ const homeStyles = StyleSheet.create({
     floatingButton: {
         alignItems: 'center',
         position: 'absolute',
-        right: 30,
+        right: PADDING.p01,
         bottom: 40,
         zIndex: 999,
         width: 60,
         height: 60,
-        paddingTop: 7,
-        borderRadius: 100 / 2
+        paddingTop: 9,
+        borderRadius: 60 / 2
     },
 
     // Custom header
@@ -274,7 +275,7 @@ const homeStyles = StyleSheet.create({
     },
 
     authButtonText: {
-        fontSize: 16,
+        fontSize: 15,
         textTransform: 'uppercase',
     },
 
@@ -323,12 +324,16 @@ const homeStyles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        paddingVertical: PADDING.p01
     },
 
     langButton: {
-        width: '100%',
-        padding: 10,
+        width: Dimensions.get('screen').width - PADDING.p10,
+        paddingVertical: PADDING.p01,
+        paddingHorizontal: PADDING.p03,
         textAlign: 'center',
+        borderBottomWidth: 1,
+        borderBottomColor: COLORS.purple_transparent
     },
 
     button: {
@@ -358,18 +363,130 @@ const homeStyles = StyleSheet.create({
         textAlign: 'center'
     },
 
+    // Work details
+    workBody: {
+        paddingVertical: 30,
+        paddingHorizontal: 10,
+    },
+
+    workCard: {
+        backgroundColor: COLORS.white,
+        marginBottom: 14,
+        padding: 15,
+    },
+
+    workTop: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingVertical: PADDING.p01
+    },
+
+    workDescTop: {
+        flexShrink: 1,
+    },
+
+    workImage: {
+        width: Dimensions.get('window').width / 2.5,
+        height: (Dimensions.get('window').width / 2.5) * 1.5,
+        marginRight: 10,
+        borderWidth: 3,
+        borderColor: COLORS.light,
+        borderRadius: 20
+    },
+
+    workImageMap: {
+        width: '100%',
+        height: '100%',
+    },
+
+    workTitle: {
+        fontSize: 19,
+        fontWeight: '700',
+        color: COLORS.purple,
+        marginTop: 10,
+    },
+
+    workContent: {
+        fontSize: 14,
+    },
+
+    workBottom: {
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+    },
+
+    workDescBottom: {
+        flexShrink: 1,
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        marginBottom: 10,
+    },
+
+    workDescText: {
+        fontSize: 16,
+        color: COLORS.black,
+        marginBottom: 10
+    },
+
+    workDescBadgesList: {
+        flexDirection: 'column',
+        marginBottom: 10,
+        paddingHorizontal: PADDING.horizontal
+    },
+
+    workDescBadgesListContents: {
+        flexShrink: 1,
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+    },
+
+    workDescBadge: {
+        fontSize: 16,
+        color: COLORS.black,
+        backgroundColor: COLORS.secondary,
+        marginBottom: 10,
+        marginRight: 7,
+        paddingTop: 3,
+        paddingBottom: 5,
+        paddingHorizontal: 10,
+        borderRadius: 10,
+    },
+
+    workIconBtns: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        maxWidth: 154,
+        marginTop: 10,
+    },
+
+    workIconBtn: {
+        fontSize: 25,
+    },
+
+    workCmds: {
+        padding: 10,
+    },
+
+    workCmd: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        padding: 10,
+        borderRadius: 5
+    },
+
+    workCmdIcon: {
+        fontSize: 16,
+        marginRight: 10
+    },
+
     // Horizontal scrolling badges
     scrollableBadges: {
         marginTop: 3,
         paddingHorizontal: 10,
         paddingVertical: 10,
         whiteSpace: 'nowrap',
-    },
-
-    scrollableList: {
-        marginBottom: 10,
-        paddingHorizontal: 10,
-        paddingVertical: 10
     },
 
     scrollableListItem: {
@@ -437,11 +554,10 @@ const homeStyles = StyleSheet.create({
 
     categoryBadgeSelected: {
         alignSelf: 'center',
-        backgroundColor: COLORS.yellow_transparent,
-        marginTop: PADDING.p00,
-        marginBottom: PADDING.p02,
+        backgroundColor: COLORS.dark_light,
         marginHorizontal: PADDING.p05,
-        padding: PADDING.p01,
+        paddingVertical: PADDING.p00 + 1,
+        paddingHorizontal: PADDING.p03,
         borderRadius: PADDING.p07
     },
 
@@ -451,7 +567,6 @@ const homeStyles = StyleSheet.create({
 
     // Search
     searchContainer: {
-        paddingTop: 15,
         flexDirection: 'column',
         alignItems: 'center'
     },
@@ -469,13 +584,16 @@ const homeStyles = StyleSheet.create({
         borderEndWidth: 0,
         borderTopLeftRadius: 7,
         borderBottomLeftRadius: 7,
-        fontSize: 16
+        fontSize: 16,
+        color: COLORS.black,
     },
 
     searchInputSubmit: {
         marginVertical: 15,
-        paddingTop: 15,
+        paddingTop: PADDING.p01,
         paddingHorizontal: 14,
+        borderWidth: 1,
+        borderStartWidth: 0,
         borderTopRightRadius: 7,
         borderBottomRightRadius: 7,
     },
@@ -566,8 +684,7 @@ const homeStyles = StyleSheet.create({
     },
 
     noteText: {
-        width: Dimensions.get('window').width - 70,
-        fontSize: 16
+        fontSize: 19
     },
 
     noteSeeTextButton: {

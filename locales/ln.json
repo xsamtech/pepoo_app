@@ -1,5 +1,5 @@
 {
-    "copyright": "Copyright (c) {{ year }} Smartways",
+    "copyright": "Copyright (c) {{ year }}",
     "all_rights_reserved": "Makoki nyonso mazali ya biso",
     "welcome_title": "Application na yo ya kokende na motuka elongo",
     "welcome_description": "Luká motuka oyo ezali kokende na ngámbo moko na yo mpo ekende elongo na yo.",
@@ -17,10 +17,16 @@
     "see_less": "Tala moke",
     "page": "Lokasa",
     "my_position": "Esika nazali",
+    "type_position": "Tyá esika mosusu",
+    "change_position": "Bongola esika nazali sik’oyo",
     "my_current_position": "Esika nazali sik’oyo",
-    "give_destination": "Napesá esika naz’okende",
+    "give_destination": "Napesa esika naz’okende",
+    "find_vehicles": "Luka mituka okoki kozwa kotalela esika ozali",
     "driver": "Mokumbi",
     "passenger": "Oyo bamemi",
+    "Mark": "Marque",
+    "Model": "Modèle",
+    "number": "Matricule",
     "notepad": {
         "title": "Bomba ba résumés",
         "title_edit": "Bongisa résumé",
@@ -40,11 +46,7 @@
     },
     "empty_list": {
         "title": "Liste ezali pamba",
-        "description_popular": "Awa, misala oyo ba membres ba consulté mingi ekolakisama.",
-        "description_books": "Awa, misala mikolakisama miye mikoki kozala consulte na ba membres.",
-        "description_mags": "Awa, eko lakisama ba journals, ba journaux to ba magazines oyo ba membres bakoki ko consulte.",
-        "description_medias": "Awa, eko lakisama ba médias oyo ba membres bakoki ko consulte.",
-        "description_maps": "Awa, eko lakisama ba cartes géographiques oyo ba membres bakoki ko consulte."
+        "description": "Mituka ezali nanu te na nzela oyo ewuti na esika ozali ti na esika oz’okende."
     },
     "back_list": "Zonga na liste",
     "work_details": {

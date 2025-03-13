@@ -7,7 +7,7 @@ import { TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { DrawerActions, NavigationContainer, useNavigation } from '@react-navigation/native';
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
 import Orientation from 'react-native-orientation-locker';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -20,6 +20,7 @@ import AboutScreen from './screens/About';
 import TermsScreen from './screens/About/terms';
 import PrivacyScreen from './screens/About/privacy';
 import ContactScreen from './screens/About/contact';
+import AvailableVehiclesScreen from './screens/Home/available_vehicles';
 
 // =============== Bottom tab ===============
 const BottomTab = createBottomTabNavigator();
@@ -149,6 +150,7 @@ const StackNav = () => {
           }
         }} />
       <Stack.Screen name='About' component={AboutBottomTab} />
+      <Stack.Screen name='AvailableVehicles' component={AvailableVehiclesScreen} />
     </Stack.Navigator>
   );
 };

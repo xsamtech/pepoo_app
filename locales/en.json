@@ -1,5 +1,5 @@
 {
-    "copyright": "Copyright (c) {{ year }} Smartways",
+    "copyright": "Copyright (c) {{ year }}",
     "all_rights_reserved": "All rights reserved",
     "welcome_title": "Your ride sharing app",
     "welcome_description": "Find a car that is going in the same direction as you to accompany you.",
@@ -17,10 +17,16 @@
     "see_less": "See less",
     "page": "Page",
     "my_position": "My position",
-    "my_current_position": "My current actuelle",
+    "type_position": "Type another position",
+    "change_position": "Change my current position",
+    "my_current_position": "My current position",
     "give_destination": "Give my destination",
+    "find_vehicles": "Find available vehicles based on your current position",
     "driver": "Driver",
     "passenger": "Passenger",
+    "Mark": "Mark",
+    "Model": "Model",
+    "number": "Number",
     "notepad": {
         "title": "Save summaries",
         "title_edit": "Edit the summary",
@@ -40,11 +46,7 @@
     },
     "empty_list": {
         "title": "The list is empty",
-        "description_popular": "Here, the works most consulted by members will be displayed.",
-        "description_books": "Here, the books will be displayed which can be consulted by members.",
-        "description_mags": "Here, the journals, newspapers or magazines which can be consulted by members will be displayed.",
-        "description_medias": "Here, the medias will be displayed which can be consulted by members.",
-        "description_maps": "Here, geographic maps will be displayed which can be consulted by members."
+        "description": "There are no vehicles available yet on the route from your position to your destination."
     },
     "back_list": "Back to the list",
     "work_details": {

@@ -4,9 +4,8 @@
  */
 import React from 'react';
 import { Linking, Text, View } from 'react-native';
-import { useNavigation, useRoute } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
-import { COLORS } from '../tools/constants';
+import { COLORS, PADDING } from '../tools/constants';
 
 const FooterComponent = () => {
   // =============== Language ===============
@@ -19,7 +18,7 @@ const FooterComponent = () => {
   return (
     <View>
       {/* Copyright */}
-      <Text style={{ textAlign: 'center', color: COLORS.dark_secondary }}>{t('copyright', { year })}</Text>
+      <Text style={{ textAlign: 'center', color: COLORS.dark_secondary, marginBottom: PADDING.p00 }}>{t('copyright', { year })} <Text style={{ fontWeight: '700' }}>Smartways</Text></Text>
       <Text style={{ textAlign: 'center', color: COLORS.dark_secondary }}>Designed by<Text style={{ color: COLORS.primary }} onPress={() => Linking.openURL('https://xsamtech.com')}> Xsam Technologies</Text></Text>
     </View>
   );
